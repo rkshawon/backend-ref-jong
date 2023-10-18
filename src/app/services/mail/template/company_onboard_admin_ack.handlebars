@@ -1,0 +1,151 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet" />
+  <title>Document</title>
+  <style>
+    body {
+      background: #f2f2f2;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+
+    .cannabis-container {
+      display: block;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .cannabis-container .logo img {
+      display: block;
+      max-width: 200px;
+    }
+
+    .content {
+      background: #fff;
+      color: "#333";
+      padding: 20px 40px;
+    }
+
+    .footer {
+      padding: 10px 50px;
+      text-align: center;
+      font-size: 10px;
+      color: #444;
+    }
+    .action_btn{
+      margin: 30px 0;
+    }
+    .action_btn a{
+      display: block;
+      width: 200px;
+      margin: 0 auto;
+      text-align: center;
+      text-decoration: none;
+      color:#fff;
+      padding: 10px 30px;
+      background: #32cb4b;
+      box-shadow: #32cb4b74 0px 8px 16px;
+    }
+    table{
+      border-collapse: collapse;
+      color:#444;
+
+    }
+
+  td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+ tr:nth-child(even){background-color: #f2f2f2;}
+ tr:hover {background-color: #ddd;}
+ 
+   
+  </style>
+</head>
+
+<body>
+  <div class="cannabis-container">
+    <div class="content">
+      <div class="logo">
+        <img class="businessImg" src="https://i.ibb.co/CnG34J1/cnlg.png" alt="brand-logo" />
+      </div>
+
+      <h4 style="color:#2e7f06;">Hello </h4>
+      <p>
+        We have recevied a new request from {{business_name}}. Please review the application 
+      </p>
+
+      <table width="100%">
+        <tr>
+          <th style="text-align: left">Business Name</th>
+          <th>{{business_name}}</th>
+        </tr>
+        <tr>
+          <th style="text-align: left">Contact Email</th>
+          <td>{{contact_email}}</td>
+        </tr>
+        <tr>
+          <th style="text-align: left">Contact Name</th>
+          <td>{{first_name}} {{last_name}}</td>
+        </tr>
+        <tr>
+          <th style="text-align: left">Contact Number</th>
+          <td>{{contact_number}}</td>
+        </tr>
+        <tr>
+          <th style="text-align: left">City</th>
+          <td>{{city}}</td>
+        </tr>
+        <tr>
+          <th style="text-align: left">Country</th>
+          <td>{{country}}</td>
+        </tr>
+        <tr>
+          <th style="text-align: left">Address</th>
+          <td>{{address.street}}, {{address.state}}, {{address.zip}}</td>
+        </tr>
+        <tr>
+          <th style="text-align: left">ZIP Code</th>
+          <td>{{address.zip}}</td>
+        </tr>
+        <tr>
+          <th style="text-align: left">DBA</th>
+          <td>{{dba}}</td>
+        </tr>
+        <tr>
+          <th style="text-align: left">License Number</th>
+          <td>{{license_number}}</td>
+        </tr>
+        <tr>
+          <th style="text-align: left">License Type</th>
+          <td>{{license_type}}</td>
+        </tr>
+      </table>
+
+      
+      <div class="action_btn">
+        <a href={{token}} target="_blank">View More</a>
+    </div>
+      
+      
+      
+      <p style="margin-top: 100px;">Regards,<br/>
+        The Cannabis Connecter Team</p>
+
+    </div>
+  </div>
+  <div class="cannabis-container">
+    <div class="footer">
+      ©2022 Cannabis Connecter,10816 E Newton Street, Suite 117B Tulsa, OK 74116
+      +1 833-452-0256
+    </div>
+
+  </div>
+</body>
+
+</html>
